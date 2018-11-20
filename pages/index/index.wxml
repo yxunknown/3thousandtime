@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view id="progress-container">
+    <view wx:for="{{progresses}}" wx:key="item" wx:key="index" id="{{index}}" bindtap="toDetail" class="progress">
+      <text class="progress-name">{{item.name}}</text>
+      <progress activeColor="black" stroke-width="4" percent="{{item.progress}}"></progress>
+      <view style="text-align:center">
+        <text class="progress-info">{{item.progress}}%</text>
+      </view>
+    </view>
+  </view>
+  <button class="add-btn" bindtap="addBtnTap">+</button>
+</view>

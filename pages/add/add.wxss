@@ -1,0 +1,26 @@
+/* pages/add.wxss */
+.input-item {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid #919191;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.input-item:focus {
+  border-bottom: 2px solid #5182eb;
+}
+.section {
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.section-title {
+  color: #919191;
+  font-size: 12px;
+}
+
+.submit-btn {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 100px;
+}

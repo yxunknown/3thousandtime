@@ -1,0 +1,22 @@
+<!--pages/add.wxml-->
+<input class="input-item" type="text" bindinput="inputTile" placeholder="输入名称"></input>
+
+<view class="section">
+  <view class="section-title">选择开始时间</view>
+  <picker mode="date" value="{{startTime}}" bindchange="startDateChange">
+    <view class="picker">
+      当前选择: {{startTime}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section-title">选择结束时间</view>
+  <picker mode="date" value="{{endTime}}" bindchange="endDateChange">
+    <view class="picker">
+      当前选择: {{endTime}}
+    </view>
+  </picker>
+</view>
+
+<button class="submit-btn" type="primary" bindtap="add">添加</button>

@@ -1,0 +1,33 @@
+<!--pages/detail/detail.wxml-->
+<view class="section">
+  <view class="section-title">进度名称</view>
+  <input class="input-item" type="text" value="{{progress.name}}" bindinput="inputTitle" placeholder="输入名称"></input>
+</view>
+
+<view class="section">
+  <view class="section-title">开始时间</view>
+  <picker mode="date" value="{{progress.startTime}}" bindchange="startDateChange">
+    <view class="picker">
+      当前选择: {{progress.startTime}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section-title">结束时间</view>
+  <picker mode="date" value="{{progress.endTime}}" bindchange="endDateChange">
+    <view class="picker">
+      当前选择: {{progress.endTime}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section-title">当前进度</view>
+  <progress class="progress" color="black" percent="{{progressNum}}" show-info="true" font-size="14px">
+  </progress>
+</view>
+
+<view class="info">提示：您在本页所做的修改，将会被保存！</view>
+
+<button class="del-btn" bindtap="delBtnTap">-</button>
